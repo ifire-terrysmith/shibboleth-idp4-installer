@@ -18,11 +18,11 @@ function set_internal_variables {
     SECRETS_PROPERTIES=$ASSETS/idp/credentials/secrets.properties
     ACTIVITY_LOG=$INSTALL_BASE/shibboleth-idp4-installer/activity.log
 
-    GIT_REPO=https://github.com/ausaccessfed/shibboleth-idp4-installer.git
+    GIT_REPO=https://github.com/ifire-terrysmith/shibboleth-idp4-installer.git
     GIT_BRANCH=master
 
     FR_TEST_REG=https://manager.test.aaf.edu.au/federationregistry/registration/idp
-    FR_PROD_REG=https://manager.aaf.edu.au/federationregistry/registration/idp
+    FR_PROD_REG=https://manager.apan.net/rr3
 }
 
 
@@ -294,42 +294,7 @@ Bootstrap finished!
 
 To make your IdP functional follow these steps:
 
-1. Register your IdP in Federation Registry:
-   `display_fr_idp_registration_link`
-
-   - For 'Step 3. SAML Configuration' we suggest using the "Easy registration
-     using defaults" with the value 'https://$HOST_NAME'
-
-   - For 'Step 4. Attribute Scope' use '$ORGANISATION_BASE_DOMAIN'.
-
-   - For 'Step 5. Cryptography'
-
-       * For the 'Signing Certificate' paste the contents of $SHIBBOLETH_IDP_INSTANCE/credentials/idp-signing.crt
-       * For the 'Backchannel Certificate' paste the contents of $SHIBBOLETH_IDP_INSTANCE/credentials/idp-backchannel.crt
-       * For the 'Encryption Certificate' paste the contents of $SHIBBOLETH_IDP_INSTANCE/credentials/idp-encryption.crt
-
-   - For 'Step 6. Supported Attributes' select the following:
-       * auEduPersonSharedToken
-       * commonName
-       * displayName
-       * eduPersonAffiliation
-       * eduPersonAssurance
-       * eduPersonScopedAffiliation
-       * eduPersonTargetedID
-       * email
-       * organizationName
-       * surname
-       * givenName
-       * eduPersonOrcid
-       * eduPersonPrincipalName
-       * homeOrganization
-       * homeOrganizationType
-
-   After completing this form, you will receive an email from the federation
-   indicating your IdP is pending.
-
-   You should now continue with the installation steps documented at
-   https://aaf.freshdesk.com/a/solutions/articles/19000119755
+1. Register your IdP in Federation Registry: https://manager.apan.net/rr3
 
 EOF
 echo "Done"
