@@ -16,20 +16,20 @@ idp_attribute_scope: "example.edu"
 federation_id: "AAF"
 
 # The federation's group id used for metadata-based attribute filtering
-federation_group_id: "https://md.aaf.edu.au/aaf-metadata.xml"
+federation_group_id: "https://md.apan.net/apan-metadata.xml"
 
 # Shared federation metadata
-metadata_url: "https://md.aaf.edu.au/aaf-metadata.xml"
+metadata_url: "https://manager.apan.net/rr3/signedmetadata/federation/APAN-Fed/metadata.xml"
 
 # Shared federation certificate
-metadata_cert_url: "https://md.aaf.edu.au/aaf-metadata-certificate.pem"
-metadata_cert_sha256sum: 00ec963039ca877b7111db3188d3d646e071c4c84ab8201fc35ad62a77ffa1a1
+metadata_cert_url: "https://manager.apan.net/rr3/signedmetadata/apan-metadata-certificate.pem"
+metadata_cert_sha256sum: 5789467d5f4ef3f42f7545866ea33f41d51b883bd6ad576916dc6daded6017eb
 
 # Metadata file name
-metadata_file_name: aaf-metadata.xml
+metadata_file_name: apan-metadata.xml
 
 # Metadata certificate file name
-metadata_cert_file_name: aaf-metadata.pem
+metadata_cert_file_name: apan-metadata.pem
 
 # Your organisation's name
 organisation_name: "The University of Example"
@@ -73,4 +73,7 @@ edugain_metadata_file_name: edugain-metadata.xml
 
 # eduGAIN Metadata certificate file name
 edugain_metadata_cert_file_name: aaf-metadata.pem
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
